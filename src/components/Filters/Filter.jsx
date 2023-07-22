@@ -1,19 +1,19 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import css from './Filter.module.css';
 
-const Filter = ({handleFilterChange, filter}) => {
+const Filter = ({handleFilterChange, filterValue}) => {
         return (
             <div className={css.containerFilter}>
                 <label htmlFor="fiind">Find contacts by name</label>
                     <input type="text"
                         onChange={handleFilterChange}
-                        value={filter}
+                        value={filterValue}
                 />
             </div>
             )
 }
-Filter.propTypes = {
-  handleFilterChange: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
-};
+// Filter.propTypes = {
+//   handleFilterChange: PropTypes.func.isRequired,
+//   filterValue: PropTypes.string.isRequired,
+// };
 export default Filter
